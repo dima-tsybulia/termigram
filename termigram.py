@@ -1,9 +1,10 @@
 #! /usr/bin/python
-# Rewritten by Dmitry Tsybulia (fork of telegram-send)
+# Rewritten by Dmitry Tsybulia (fork of telegram-send):
+# --> removed redundant functionality;
+# --> rewritten package output;
+# --> rewritten help output.
 # For personal use only
-# v.0.2.82 - 01/16/2018
-
-# Find out how to remove termigram package
+# v.0.2.85 - 01/22/2018
 
 from os.path import dirname, exists, expanduser, join
 from telegram.constants import MAX_MESSAGE_LENGTH
@@ -30,7 +31,7 @@ def main():
 	    add_help=False,
 	    formatter_class=delete_usage,
 	    description="Send messages to Telegram using Linux terminal.",
-		epilog="Homepage: https://github.com/dmitry-tsybulia"
+		epilog="Homepage: https://github.com/dmitry-tsybulia/termigram"
 	)
 
     parser.add_argument("message", help="Send a message.", nargs="*")
@@ -39,10 +40,11 @@ def main():
     parser.add_argument("--format", dest="parse_mode", help=argparse.SUPPRESS)
     parser.add_argument("-s", "--stdin", help="Send text from stdin.", action="store_true")
     parser.add_argument("-m", "--monospace", help="Send monospace.", action="store_true")
+    # r - to open file for reading; b - for reading bytes from the file.
     parser.add_argument("-f", "--file", help="Send file.", nargs="+", type=argparse.FileType("rb"))
     parser.add_argument("-t", "--timeout", help="Set the read timeout for network operations (sec).", type=float, default=30)
     parser.add_argument("-c", "--clean", help="Clean Termigram configuration file.", action="store_true")
-    parser.add_argument("-v", "--version", help="Show program's version number and exit.", action="version", version="0.2.82")
+    parser.add_argument("-v", "--version", help="Show program's version number and exit.", action="version", version="0.2.85")
     parser.add_argument("-h", "--help", help=argparse.SUPPRESS, action="help")
     parser._positionals.title = 'Positional arguments'
     parser._optionals.title = 'Optional arguments'
