@@ -9,6 +9,6 @@ setup(
     author_email="dmitry.tsybulia@gmail.com",
     py_modules=["termigram"],
     author="Dmitry Tsybulia",
-    version="0.2.82",
+    version="0.2.85",
     name="Termigram"
 )
