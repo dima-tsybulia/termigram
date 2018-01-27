@@ -31,6 +31,7 @@ chmod +x termigram.sh; sudo ./termigram.sh -u
 
 Usage:
 To send text message: termigram <some_text>
+
 For instance: termigram "Find out how to configure this network interface ASAP!"
 There is a maximum message length of 4096 characters, larger messages will be automatically split up into smaller ones and sent separately.
 To configure Termigram to specific channel: termigram --configure
