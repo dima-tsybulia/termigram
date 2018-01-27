@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#!/usr/bin/python
 # Rewritten by Dmitry Tsybulia (forked from telegram-send)
 # For personal use only
 # v.0.2.85 - 01/22/2018
