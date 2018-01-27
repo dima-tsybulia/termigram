@@ -1,8 +1,5 @@
 #! /usr/bin/python
-# Rewritten by Dmitry Tsybulia (fork of telegram-send):
-# --> removed redundant functionality;
-# --> rewritten package output;
-# --> rewritten help output.
+# Rewritten by Dmitry Tsybulia (forked from telegram-send)
 # For personal use only
 # v.0.2.85 - 01/22/2018
 
