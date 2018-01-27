@@ -19,7 +19,7 @@ sudo python setup.py install
 termigram --configure
 ```
 
-*Or simply: chmod +x termigram.sh; sudo ./termigram.sh -i*
+*Or simply: `chmod +x termigram.sh; sudo ./termigram.sh -i`*
 
 ### Uninstallation:
 
@@ -32,7 +32,7 @@ sudo -H pip uninstall appdirs
 sudo apt autoremove
 ```
 
-*Or simply: chmod +x termigram.sh; sudo ./termigram.sh -u*
+*Or simply: `chmod +x termigram.sh; sudo ./termigram.sh -u`*
 
 ### Usage:
 
